@@ -1,4 +1,3 @@
-#input matrici di interi N+2 x 2
 import tensorflow as tf
 from gridding import Grid
 from datetime import datetime
@@ -90,7 +89,6 @@ class RNN():
         self.accuracy_ph = tf.reduce_sum(tf.compat.v1.div(tf.reduce_sum((acc_alfa + acc_beta)/2, axis=1), length - 1))
 
 
-    # Regolarità negli embedding di input
     def constraint_emb_in(self, conf):
         """
         Constraint on spatial relationship of grid cell.
