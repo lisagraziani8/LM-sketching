@@ -13,16 +13,13 @@ The segments of the image are represented with a matrix $X \in G^{(N+2) \times 2
 
 ### Code
 
-1) *build_matrix.py* 
+Only few data are loaded.
 
-From sketch images extract segments. 
-Sketch are represented with segments endpoints [x0,y0,x1,y1]. 
+1) *build_matrix.py* From sketch images extract segments. Sketch are represented with segments endpoints [x0,y0,x1,y1]. 
 
-2) *grid_build_matrix.py*
+2) *grid_build_matrix.py* Convert segments from [x0,y0,x1,y1] into [alpha, beta].
 
-Convert segments from [x0,y0,x1,y1] into [alpha, beta].
+3) *grid_trainA.py* Train sketch model to predict the next segments.
 
-3) *grid_trainA.py*
 
-Train sketch model to predict the next segments.
 
