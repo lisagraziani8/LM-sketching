@@ -1,6 +1,4 @@
-# LM-sketching
-
-# Language Modeling Sketching
+# Language Modeling-like approach to Sketching
 
 We proposed a model which generates sketches, in which sketches are represented as sequences of segments. This means that segments are ordered with respect to time. We train an RNN using such sequences and then we use the RNN to generate new sketches. After training we provide the network some initial segments and let it complete the sketch, generating one segment at each time step. In this approach the sketch creation occurs as in natural language processing where the next word is predicted. In this case, unlike the language, the primitive is a segment.
 
